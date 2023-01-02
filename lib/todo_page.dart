@@ -72,7 +72,13 @@ Widget newTaskTextField({
     Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const Text('Add new Task:'),
+        const SizedBox(
+          height: 10,
+        ),
+        const Text(
+          'Add new Task:',
+          style: TextStyle(fontSize: 20),
+        ),
         TextField(
           controller: textFieldController,
           onChanged: textOnChanged,
